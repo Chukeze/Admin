@@ -1,10 +1,26 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Overview
+This project is a role-based dashboard application built with Next.js 14 and TypeScript. It is designed to display different UI elements and data based on the user's role, enhancing both security and user experience. The application uses React Context for state management and Higher-Order Components (HOCs) for role-based access control.
+
+# Current Features
+- Dynamic Dashboard: Updates content based on user interactions and roles.
+- Role-Based Access Control: Customizable UI elements visible based on user permissions.
+- Centralized State Management: Using React Context for managing user authentication and roles.
+- Next.js & TypeScript: Leveraging the power of Next.js for SSR and TypeScript for type safety.
+- Optimized fonts
+
+## Current Viewable Version
 
 First, run the development server:
 
 ```bash
+git clone [https://github.com/Chukeze/Admin]
+
+cd [Admin]
+
+npm install
+
 npm run dev
 # or
 yarn dev
@@ -16,21 +32,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Current Project Structure
+- /pages - Next.js pages including the main dashboard.
+- /components - Reusable components including sidebar items.
+- /context - React Context for global state management.
+- /hoc - Higher-Order Components for role-based access.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
