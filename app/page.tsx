@@ -1,11 +1,10 @@
+'use client'
+
 import { useAuth } from '@/component/context/AuthContext'
 import Dashboard from './ui/(dashboard)/page';
 import LoginForm from './ui/(auth)/sign-in/page';
 import Error from '@/component/error';
-import { JSX } from 'react';
-
-
-console.log(useAuth);
+import { JSX} from 'react';
 
 export default function Home(props: JSX.IntrinsicAttributes & { error: Error & { digest?: string | undefined; }; reset: () => void; }) {
 
