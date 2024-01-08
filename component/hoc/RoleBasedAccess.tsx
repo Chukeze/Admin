@@ -2,7 +2,7 @@ import React, { ComponentType, useContext, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { UserRole } from '@/types/roles'
 import Modal from '../Modal'
-import { AuthContext } from '@/component/context/AuthContext'
+import { AuthContext } from '@/component/hooks/context/AuthContext'
 
 function RoleBasedAccess<P>(
   Component: ComponentType<P>,

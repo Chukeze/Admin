@@ -10,6 +10,8 @@
     "format": "prettier --check ."
   },
   "dependencies": {
+    "@stylexjs/stylex": "^0.4.1",
+    "clsx": "^2.1.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

@@ -11,10 +11,12 @@ function Dashboard() {
 
   return (
     <section className="flex h-screen flex-row p-24">
-      <aside><DashboardSidebarWithRoleAccess changeActivePanel={setActivePanel} /></aside>
-      <main className="flex-grow p-6 bg-blue-400">
-        <Panel activePanel={activePanel} />
-      </main>
+        <aside>
+            <DashboardSidebarWithRoleAccess changeActivePanel={setActivePanel} />
+            </aside>
+        <main className="flex-grow p-6 bg-blue-400">
+            <Panel activePanel={activePanel} />
+        </main>
     </section>
   )
 }

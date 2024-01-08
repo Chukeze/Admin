@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import AuthProvider from '@/component/context/AuthContext'
+import AuthProvider from '@/component/hooks/context/AuthContext'
+import FooterLinks from './footer-links'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,10 +21,10 @@ export default function RootLayout({
       <body
         className={`${inter.className} flex min-h-screen flex-col items-center justify-between p-24 `}
       >
-        <AuthProvider>
-          {children}          
-        </AuthProvider>
-
+        <AuthProvider>{children}</AuthProvider>
+        <footer className='w-full'>
+          <FooterLinks/>
+        </footer>
       </body>
     </html>
   )
