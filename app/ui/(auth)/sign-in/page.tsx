@@ -1,9 +1,10 @@
+"use client"
 import { create } from '@/component/actions/action'
 import {arima} from '@/component/fonts/fonts'
 import { AuthContext } from '@/component/hooks/context/AuthContext'
 import { useContext } from 'react'
 //import * as stylex from '@stylexjs/stylex'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 /*const formStyles = stylex.create({
     root: {
