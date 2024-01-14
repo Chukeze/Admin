@@ -3,7 +3,8 @@
 import { useEffect } from 'react'
 import { useAuth } from './hooks/context/AuthContext'
 
-export default function Error({
+export default function ErrorComponent
+({
   error,
   reset,
 }: {
@@ -46,4 +47,14 @@ export default function Error({
       </div>
     )
   }
+
+  return <div>Error: {getErrorDescription(error)}</div>
 }
+
+const logError = (error) => {
+  //Log errors
+};
+
+const getErrorDescription = (error) => {
+  //convert error codes/ types to user friendly message
+};

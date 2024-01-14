@@ -8,12 +8,14 @@ import {
 } from './DashboardSidebarItems'
 import RoleBasedAccess from './hoc/RoleBasedAccess'
 import { useAuth } from './hooks/context/AuthContext'
+//import { getServerSideProps } from 'next/dist/build/templates/pages'
 
 export interface DashboardSidebarProps {
   changeActivePanel: (panel: string) => void
 }
 
 function DashboardSidebar({ changeActivePanel }: DashboardSidebarProps) {
+    //getServerSideProps
   const { state } = useAuth()
   switch (state.role) {
     case UserRole.ADMIN:

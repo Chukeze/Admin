@@ -3,7 +3,7 @@
 import { useAuth } from '@/component/hooks/context/AuthContext'
 import Dashboard from './ui/(dashboard)/page'
 import LoginForm from './ui/(auth)/sign-in/page'
-import Error from '@/component/error'
+import ErrorComponent from '@/component/error'
 
 export default function Home(
   props: {
@@ -21,7 +21,7 @@ export default function Home(
           <LoginForm />
         )
       ) : (
-        <Error {...props} />
+        <ErrorComponent {...props} />
       )}
     </>
   )

@@ -1,8 +1,11 @@
+//import { getServerSideProps } from "next/dist/build/templates/pages";
+
 type PanelProps = {
     activePanel: string;
 };
 
 function Panel({activePanel}: PanelProps) {
+  //getServerSideProps;
     switch (activePanel.toLowerCase()) {
       case 'revenue':
         return <RevenuePanel />

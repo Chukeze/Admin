@@ -19,11 +19,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex min-h-screen flex-col items-center justify-between p-24 `}
+        className={`${inter.className} flex min-h-screen flex-col grow justify-between`}
       >
         <AuthProvider>{children}</AuthProvider>
-        <footer className='w-full'>
-          <FooterLinks/>
+        <footer className="flex flex-row justify-between items-center w-full bg-slate-200 py-2 px-4">
+          <p>SpeedyMart</p>
+          <section className="flex flex-row justify-around w-full bg-slate-200 py-2 px-4">
+            <FooterLinks url={'/'} href={'/'} name={'Facebook'}  />
+            <FooterLinks url={''} href={''} name={'Instagram'} />
+            <FooterLinks url={''} href={''} name={'X'} />
+            <FooterLinks url={''} href={''} name={'email'} />
+            <FooterLinks url={''} href={''} name={'phone'} />
+            <FooterLinks url={''} href={''} name={'tik-tok'} />
+            <FooterLinks url={''} href={''} name={'snapchat'} />
+          </section>
         </footer>
       </body>
     </html>

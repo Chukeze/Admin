@@ -4,6 +4,7 @@ import { UserRole } from '@/types/roles'
 import Modal from '../Modal'
 import { AuthContext } from '@/component/hooks/context/AuthContext'
 
+
 function RoleBasedAccess<P>(
   Component: ComponentType<P>,
   allowedRoles: UserRole[]
@@ -23,10 +24,14 @@ function RoleBasedAccess<P>(
     if (!state.isAuthenticated || !allowedRoles.includes(state.role)) {
       if (!showModal) setShowModal(true)
       return createPortal(
-        <Modal onClose={() => setShowModal(false)} />,
+        <Modal onClose={() => { 
+            setShowModal(false)
+          }
+        } />,
         document.body
       )
     }
+
 
     return <Component {...props} />
   }
