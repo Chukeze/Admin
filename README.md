@@ -25,7 +25,7 @@ This project is a role-based dashboard application built with Next.js 14 and Typ
 # Current Viewable Version
 
 
-#Installation and Setup:
+# Installation and Setup:
 
 - Clone repo
 ```bash
