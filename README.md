@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 # Overview
 SpeedyMart is a web application built using Next.js 14, TypeScript, and Tailwind CSS. It's designed to provide a seamless and efficient user experience for various roles within a retail organization, including Admin, HR, Sales, Maintenance, and Engineering.
 ## Concept
-This project is a role-based dashboard application built with Next.js 14 and TypeScript. It is designed to display different UI elements and data based on the user's role, enhancing both security and user experience. The application uses React Context for state management and Higher-Order Components (HOCs) for role-based access control.
+This project is a role-based dashboard application built with Next.js 14 and TypeScript. It is designed to display different UI elements and data based on the user's role, enhancing both security and user experience. The application uses React Context for state management and Higher-Order Components (HOCs) for role-based access control. User can track different data point and trend, manage factor that contribute to company productivity, profitability, and processes.
 
 ## Current Focus Features
 - User Authentication: Secure login functionality for different roles
